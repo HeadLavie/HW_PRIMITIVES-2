@@ -2,22 +2,24 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-    int x = 100;
+        int reward = 100;
 
-    int y = 1100;
+        int added_rubles = 1100;
 
-    int bonus;
+        int bonus;
 
-    int amount = x+y;
+        int amount = reward + added_rubles;
 
-    if (y<1000) {
+        if (added_rubles < 1000) {
 
-        bonus = 0;
-    } else {
-        bonus = y / 100;
-    }
+            bonus = 0;
+        } else {
+            bonus = added_rubles / 100;
+        }
 
-    System.out.println("Итоговый бонус: " + bonus);
-    System.out.println("Счет:" + amount);
+        int final_amount = amount + bonus;
+
+        System.out.println("Итоговый бонус: " + bonus);
+        System.out.println("Счет:" + final_amount);
     }
 }
